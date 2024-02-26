@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    font-family: 'Embed code', sans-serif;
+}
+:root{
+    --color-primary: #6f5ed6;
+    --color-wraning: #e28512;
+    --color-white: #fff;
+    --color-black: #0e2431;
+    --color-dark: #525154;
+
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    --transition: .4s ease;
+}
+.nightMood{
+    --color-white: #0a071a;
+    --color-black: #fff;
+    --color-dark: #fff;
+
+    --box-shadow: 0 2px 4px rgba(97,97,97,0.6);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: var(--color-dark);
+    background: var(--color-white);
+}
+h1,h2,h3,h4,h5{
+    font-weight: 700;
+    line-height: 130%;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 44px;
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    color: var(--color-primary);
+    margin: auto;
+    margin-bottom: 4rem;
+}
+h2::before{
+    content: '';
+    width: 80%;
+    height: 4px;
+    background: var(--color-primary);
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+h3{
+    font-size: 36px;
+}
+h4{
+    font-size: 28px;
+}
+h5{
+    font-size: 20px;
+}
+p{
+    font-size: 19px;
+    line-height: 150%;
+}
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.btn{
+    width: fit-content;
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--color-white);
+    color: var(--color-black);
+    box-shadow: var(--box-shadow);
+    font-weight: 500;
+    font-size: 19px;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+.btn-prim{
+    background: var(--color-primary);
+    border: 2px solid transparent;
+    color: var(--color-white);
+}
+.btn:hover{
+    background: transparent;
+    color: var(--color-wraning);
+    border-color: var(--color-wraning);
+}
+.btn-sm{
+    padding: 10px 20px;
+    border-radius: 0px !important;
+}
